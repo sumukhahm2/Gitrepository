@@ -6,5 +6,5 @@ var itemss=document.getElementsByClassName('list-group-item');
 for(var i=0;i<itemss.length;i++)
 {
     itemss[i].style.fontWeight='bold';
-    itemss[i].style.color='green';
+    itemss[i].style.background='green';
 }
