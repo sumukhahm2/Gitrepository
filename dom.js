@@ -33,6 +33,8 @@ function addItem(e){
   
   var newItem = document.getElementById('item').value;
   var newItem1= document.getElementById('itm').value;
+  var item=newItem+' '+newItem1;
+  localStorage.setItem(item,'item');
  
 
   var li = document.createElement('li');
