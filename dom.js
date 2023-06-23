@@ -33,8 +33,11 @@ function addItem(e){
   
   var newItem = document.getElementById('item').value;
   var newItem1= document.getElementById('itm').value;
-  var item=newItem+' '+newItem1;
-  localStorage.setItem(item,'item');
+  let obj={
+     item:newItem,
+     item1:newItem1
+  }
+  localStorage.setItem(JSON.stringify(obj),'obj');
  
 
   var li = document.createElement('li');
