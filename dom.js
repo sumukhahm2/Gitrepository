@@ -33,6 +33,7 @@ function addItem(e){
   
   var newItem = document.getElementById('item').value;
   var newItem1= document.getElementById('itm').value;
+  var itemsubmit=newItem+' '+newItem1;
   let obj={
      item:newItem,
      item1:newItem1
@@ -42,6 +43,11 @@ function addItem(e){
 
   var li = document.createElement('li');
   var li1 = document.createElement('li');
+  var divi=document.createElement('div');
+  divi.appendChild(document.createTextNode(itemsubmit))
+  console.log(divi);
+  var division=document.querySelector('.card card-body')
+
 
 
   li.className = 'list-group-item';
